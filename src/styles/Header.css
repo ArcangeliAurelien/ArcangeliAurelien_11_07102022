@@ -1,0 +1,23 @@
+.Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 100px 63px 100px;
+    font-weight: bold;
+}
+
+.App-logo {
+    width: 210.32px;
+    height: 68px;
+}
+
+.Header a {
+    color: #FF6060;
+    text-decoration: none;
+    font-size: 24px;
+    padding-left: 57px;
+}
+
+.Header a:hover {
+    text-decoration: underline;
+}

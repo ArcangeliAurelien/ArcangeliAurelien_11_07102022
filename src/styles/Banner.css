@@ -1,0 +1,28 @@
+.Banner {
+    border-radius: 25px;
+    height: 223px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 100px 43px 100px;
+    overflow: hidden;
+}
+
+.Banner p {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 48px;
+    background: rgba(0, 0, 0, 0.3);
+    height: 223px;
+    width: 1720px;
+    border-radius: 25px;
+    line-height: 68.45px;
+}
+
+.bg-Banner {
+    display: block;
+    width: 100%;
+}
