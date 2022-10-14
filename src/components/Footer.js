@@ -1,3 +1,4 @@
+import React from "react";
 import logo_Kasa_Footer from '../assets/logo_Kasa_Footer.png'
 import '../styles/Footer.css';
 

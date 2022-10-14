@@ -1,3 +1,4 @@
+import React from "react";
 import '../styles/Banner.css'
 import IMG from '../assets/IMG.png'
 
