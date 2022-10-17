@@ -2,8 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 100px 63px 100px;
-    font-weight: bold;
+    padding: 40px 100px 0px 100px;
 }
 
 .App-logo {

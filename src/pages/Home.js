@@ -7,7 +7,6 @@ import { LogementList } from '../datas/LogementList'
 import Header from '../components/Header';
 import Banner from '../components/Banner';
 import Footer from '../components/Footer';
-import LogementPage from '../pages/LogementPage'
 
 function Home() {
   return <div>
@@ -16,7 +15,7 @@ function Home() {
     <div className="Container">
       <ul className='logement-list'>
         {LogementList.map(({ id, cover, title }) => (
-          <li key={id} className="logement-item" onClick={() => LogementPage()}>
+          <li key={id} className="logement-item">
             <Link to={`/LogementPage/${id}`}>
               <img className="logement-item-cover" src={cover} alt={`${title} cover`} />
               <p>{title}</p>

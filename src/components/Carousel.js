@@ -1,9 +1,7 @@
-
+// import React from "react";
+import "../styles/Carousel.css"
 
 function Slide() {
-    let verifURL = new URLSearchParams(window.location.search)
-    console.log(verifURL);
-
     
 }
 

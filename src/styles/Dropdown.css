@@ -1,0 +1,50 @@
+.item3 {
+    padding-bottom: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown {
+    font-size: 18px;
+    width: 582px;
+    height: 52px;
+    background-color: #FF6060;
+    color: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdown-value {
+    padding-left: 20px;
+    padding-right: 9px;
+}
+
+.description {
+    width: 582px;
+    height: auto;
+    border-radius: 10px;
+    background-color: #F7F7F7;
+    color: #FF6060;
+    padding-top: 40px;
+    padding-bottom: 53px;
+    font-size: 18px;
+}
+
+.text {
+    padding-left: 20px;
+}
+
+/*---------------------------------------------------*/
+
+.equipement {
+    width: 582px;
+        height: auto;
+        border-radius: 10px;
+        background-color: #F7F7F7;
+        color: #FF6060;
+        padding-top: 40px;
+        padding-bottom: 53px;
+        font-size: 18px;
+}
