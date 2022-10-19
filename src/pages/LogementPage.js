@@ -1,16 +1,15 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import Header from '../components/Header';
-import Dropdown from '../components/Dropdown';
+import Carousel from '../components/Carousel';
+import DropdownItem from '../components/Dropdown';
 import Footer from '../components/Footer';
 import { LogementList } from '../datas/LogementList'
 import "../styles/LogementPage.css"
 
 function LogementPage() {
     const { id } = useParams()
-    //console.log(id);
     const lgt = LogementList.find((ele) => ele.id === id)
-    //console.log(lgt);
 
     const host = lgt.host
     const itemHost = <div className='profil'>
@@ -24,6 +23,7 @@ function LogementPage() {
         <div>
             <Header />
             <div className='body'>
+                <Carousel />
                 <div className='item1'>
                     <div>
                         <div className='title'>{lgt.title}</div>
@@ -36,7 +36,7 @@ function LogementPage() {
                         tags.map((tag, index) => (<div key={index} className='tag'>{tag}</div>))
                     }</div>
                 </div>
-                <Dropdown />
+                <DropdownItem />
             </div>
             <Footer />
         </div>

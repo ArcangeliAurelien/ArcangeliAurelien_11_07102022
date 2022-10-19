@@ -8,5 +8,6 @@
 .logement-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    grid-gap: 50px 60px;
+    padding: 56px 0 56px 50px;
 }
