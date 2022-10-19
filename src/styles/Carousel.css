@@ -1,8 +1,15 @@
-.carousel {
-    height: 415px;
-    border-radius: 25px;
-    margin: 30px 100px 30px 100px;
-    border: 1px solid black;
-    overflow: hidden;
+.rightArrow {
+    position: absolute;
+    right: 20px;
+    width: 46.68px;
+    height: 79.2px;
+    color: #fff;
 }
 
+.leftArrow {
+    position: absolute;
+    left: 20px;
+    width: 46.68px;
+    height: 79.2px;
+    color: #fff;
+}

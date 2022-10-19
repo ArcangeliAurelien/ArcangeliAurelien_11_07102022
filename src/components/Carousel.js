@@ -1,8 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import { useParams } from 'react-router-dom';
-import { Slide } from 'react-slideshow-image';
 import { LogementList } from '../datas/LogementList'
 import "../styles/Carousel.css"
+import { SlideImage, StyledSlider } from "../styles/SlideImage"
+import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 
 function Carousel() {
     const { id } = useParams()
@@ -10,16 +11,37 @@ function Carousel() {
 
     const images = lgt.pictures
 
+    const [current, setCurrent] = useState(0)
+    const length = images.length
+
+    const nextSlide = () => {
+        setCurrent(current === length - 1 ? 0 : current + 1);
+    }
+
+    const prevSlide = () => {
+        setCurrent(current === 0 ? length - 1 : current - 1);
+    }
+
     return (
-        <div>
-            <Slide className="carousel">
-                <div>
-                    {images.map((image, index) => (
-                        <img key={index} src={image} alt="img-lgt" />
-                    ))}
-                </div>
-            </Slide>
-        </div>
+        <StyledSlider>
+            <FaChevronLeft
+                className="leftArrow"
+                onClick={prevSlide}
+            />
+            <FaChevronRight 
+                className="rightArrow"
+                onClick={nextSlide}
+            />
+            {images.map((slide, index) => {
+                return (
+                    <div key={index}>
+                        {index === current && (
+                            <SlideImage src={slide} alt="img-lgt" />
+                        )}
+                    </div>
+                )
+            })}
+        </StyledSlider>
     )
 }
 
