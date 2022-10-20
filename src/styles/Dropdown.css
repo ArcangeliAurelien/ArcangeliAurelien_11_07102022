@@ -17,16 +17,10 @@
     cursor: pointer;
 }
 
-.dropdown img {
-    transform: rotate(180deg);
-}
-
 .dropdown-value {
     padding-left: 20px;
     padding-right: 9px;
 }
-
-
 
 .description {
     width: 582px;

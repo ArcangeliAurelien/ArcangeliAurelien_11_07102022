@@ -1,10 +1,11 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import { LogementList } from '../datas/LogementList'
 import Header from '../components/Header';
 import Carousel from '../components/Carousel';
+import Rating from '../components/Rating';
 import DropdownItem from '../components/Dropdown';
 import Footer from '../components/Footer';
-import { LogementList } from '../datas/LogementList'
 import "../styles/LogementPage.css"
 
 function LogementPage() {
@@ -34,7 +35,9 @@ function LogementPage() {
                 <div className='item2'>
                     <div className='tags'>{
                         tags.map((tag, index) => (<div key={index} className='tag'>{tag}</div>))
-                    }</div>
+                    }
+                    </div>
+                    <Rating />
                 </div>
                 <DropdownItem />
             </div>

@@ -43,6 +43,8 @@
 .item2 {
     padding-top: 23px;
     padding-bottom: 26px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .tags {
@@ -60,4 +62,11 @@
     margin-right: 10px;
     padding-left: 40px;
     padding-right: 40px;
+}
+
+/*---------------------------------------------------*/
+
+.stars {
+    width: 30px;
+    height: 30px;
 }
