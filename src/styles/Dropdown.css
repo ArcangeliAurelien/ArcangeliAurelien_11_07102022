@@ -41,11 +41,11 @@
 
 .equipement {
     width: 582px;
-        height: auto;
-        border-radius: 10px;
-        background-color: #F7F7F7;
-        color: #FF6060;
-        padding-top: 40px;
-        padding-bottom: 53px;
-        font-size: 18px;
+    height: auto;
+    border-radius: 10px;
+    background-color: #F7F7F7;
+    color: #FF6060;
+    padding-top: 40px;
+    padding-bottom: 53px;
+    font-size: 18px;
 }
