@@ -43,7 +43,6 @@ function About() {
         <Header />
         <div className="BannerAbout">
             <img src={IMG2} className='imgAbout' alt='imgAbout' />
-            <div className="shadow"></div>
         </div>
 
         <div className="bodyAbout">
@@ -52,7 +51,7 @@ function About() {
                 <div className="bloc">
                     <div className='dropdownAbout' onClick={handleOpen}>
                         <div className='sous-titre'>Fiabilité</div>
-                        <img className='arrow' style={{ transform: rotate, transition: "all 0.2s linear" }} src={arrowDown} alt='arrow' />
+                        <img className='arrow' style={{ transform: rotate }} src={arrowDown} alt='arrow' />
                     </div>
                     {open ? (
                         <div className='bloc-text'>
@@ -68,7 +67,7 @@ function About() {
                 <div className="bloc">
                     <div className='dropdownAbout' onClick={handleOpen2}>
                         <div className='sous-titre'>Respect</div>
-                        <img className='arrow' style={{ transform: rotate2, transition: "all 0.2s linear" }} src={arrowDown} alt='arrow' />
+                        <img className='arrow' style={{ transform: rotate2 }} src={arrowDown} alt='arrow' />
                     </div>
                     {open2 ? (
                         <div className='bloc-text'>
@@ -84,7 +83,7 @@ function About() {
                 <div className="bloc">
                     <div className='dropdownAbout' onClick={handleOpen3}>
                         <div className='sous-titre'>Service</div>
-                        <img className='arrow' style={{ transform: rotate3, transition: "all 0.2s linear" }} src={arrowDown} alt='arrow' />
+                        <img className='arrow' style={{ transform: rotate3 }} src={arrowDown} alt='arrow' />
                     </div>
                     {open3 ? (
                         <div className='bloc-text'>
@@ -100,7 +99,7 @@ function About() {
                 <div className="bloc">
                     <div className='dropdownAbout' onClick={handleOpen4}>
                         <div className='sous-titre'>Sécurité</div>
-                        <img className='arrow' style={{ transform: rotate4, transition: "all 0.2s linear" }} src={arrowDown} alt='arrow' />
+                        <img className='arrow' style={{ transform: rotate4 }} src={arrowDown} alt='arrow' />
                     </div>
                     {open4 ? (
                         <div className='bloc-text'>

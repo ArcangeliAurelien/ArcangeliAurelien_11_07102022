@@ -2,13 +2,28 @@
     background-color: black;
     color: white;
     font-size: 24px;
-    height: 209px;
+    max-width: 1440px;
+    max-height: 209px;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    position: absolute;
+    
 }
 
 .Footer p {
     padding-bottom: 29px;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width: 475px) {
+    .Footer {
+        max-width: 475px;
+        font-size: 12px;
+        justify-content: center;
+    }
 }

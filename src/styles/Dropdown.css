@@ -2,11 +2,15 @@
     padding-bottom: 14px;
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .dropdown {
-    font-size: 18px;
-    width: 582px;
+    max-width: 582px;
+    width: 100%;
+}
+
+.dropdownItem {
     height: 52px;
     background-color: #FF6060;
     color: #FFFFFF;
@@ -18,29 +22,28 @@
 }
 
 .dropdown-value {
+    font-size: 18px;
     padding-left: 20px;
     padding-right: 9px;
 }
 
 .description {
-    width: 582px;
     height: auto;
     border-radius: 10px;
     background-color: #F7F7F7;
     color: #FF6060;
     padding-top: 40px;
     padding-bottom: 53px;
-    font-size: 18px;
 }
 
 .text {
     padding-left: 20px;
+    font-size: 18px;
 }
 
 /*---------------------------------------------------*/
 
 .equipement {
-    width: 582px;
     height: auto;
     border-radius: 10px;
     background-color: #F7F7F7;
@@ -48,4 +51,46 @@
     padding-top: 40px;
     padding-bottom: 53px;
     font-size: 18px;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width: 780px) {
+    .item3 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .dropdown {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .dropdown {
+        font-size: 13px;
+        max-width: 435px;
+    }
+
+    .dropdownItem {
+        height: 29.93px;
+    }
+
+    .dropdown-value {
+        font-size: 13px;
+        padding-left: 11.51px;
+        padding-right: 9px;
+        width: 18.42px;
+        height: 18.42px;
+    }
+
+    .description, 
+    .equipement {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .text {
+        font-size: 12px;
+    }
 }

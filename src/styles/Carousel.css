@@ -1,6 +1,27 @@
+.StyledSlider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1240px;
+    max-height: 415px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.SlideImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .rightArrow {
     position: absolute;
-    right: 20px;
+    right: 5%;
+}
+
+.rightArrow svg,
+.leftArrow svg {
     width: 46.68px;
     height: 79.2px;
     color: #fff;
@@ -8,8 +29,63 @@
 
 .leftArrow {
     position: absolute;
-    left: 20px;
-    width: 46.68px;
-    height: 79.2px;
-    color: #fff;
+    left: 5%;
+}
+
+.number {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    color: white;
+    font-size: 18px;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width: 1024px) {
+    .leftArrow {
+        left: 3%;
+    }
+
+    .rightArrow {
+        right: 3%;
+    }
+    
+    .rightArrow svg,
+    .leftArrow svg {
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .StyledSlider {
+        max-height: 300px;
+    }
+    
+    .SlideImage {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .StyledSlider {
+        max-width: 435px;
+        max-height: 255px;
+        border-radius: 10px;
+    }
+    
+    .rightArrow svg,
+    .leftArrow svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .number {
+        visibility: hidden;
+    }
+
+    .SlideImage {
+        width: 100%;
+    }
 }

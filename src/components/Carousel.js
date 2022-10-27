@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import { useParams } from 'react-router-dom';
 import { LogementList } from '../datas/LogementList'
 import "../styles/Carousel.css"
-import { SlideImage, StyledSlider } from "../styles/SlideImage"
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 
 function Carousel() {
@@ -13,6 +12,7 @@ function Carousel() {
 
     const [current, setCurrent] = useState(0)
     const length = images.length
+    const number = current + 1
 
     const nextSlide = () => {
         setCurrent(current === length - 1 ? 0 : current + 1);
@@ -23,25 +23,31 @@ function Carousel() {
     }
 
     return (
-        <StyledSlider>
-            <FaChevronLeft
-                className="leftArrow"
-                onClick={prevSlide}
-            />
-            <FaChevronRight 
-                className="rightArrow"
-                onClick={nextSlide}
-            />
-            {images.map((slide, index) => {
-                return (
-                    <div key={index}>
-                        {index === current && (
-                            <SlideImage src={slide} alt="img-lgt" />
-                        )}
-                    </div>
-                )
-            })}
-        </StyledSlider>
+        <div>
+            <div className="StyledSlider">
+                <div className="leftArrow">
+                    <FaChevronLeft
+                        onClick={prevSlide}
+                    />
+                </div>
+                <div className="rightArrow">
+                    <FaChevronRight
+                        onClick={nextSlide}
+                    />
+                </div>
+                <div className="number">{number} / {length}</div>
+
+                {images.map((slide, index) => {
+                    return (
+                        <div key={index}>
+                            {index === current && (
+                                <img className="SlideImage" src={slide} alt="img-lgt" />
+                            )}
+                        </div>
+                    )
+                })}
+            </div>
+        </div>
     )
 }
 

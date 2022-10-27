@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 html {
-    font-family: 'Montserrat', sans-serif;
-    width: 1440px;
+    font-family: Montserrat;
+    max-width: 1440px;
+    width: 100%;
     height: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+}
+
+@media screen and (max-width: 375px) {
+    html {
+        width: 375px;
+    }
 }

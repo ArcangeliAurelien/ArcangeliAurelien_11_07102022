@@ -25,19 +25,21 @@ function LogementPage() {
             <Header />
             <div className='body'>
                 <Carousel />
-                <div className='item1'>
-                    <div>
-                        <div className='title'>{lgt.title}</div>
-                        <div className='location'>{lgt.location}</div>
+                <div className='description-lgt'>
+                    <div className='item1'>
+                        <div>
+                            <div className='title'>{lgt.title}</div>
+                            <div className='location'>{lgt.location}</div>
+                        </div>
+                        <div className='tags'>{
+                            tags.map((tag, index) => (<div key={index} className='tag'>{tag}</div>))
+                        }
+                        </div>
                     </div>
-                    {itemHost}
-                </div>
-                <div className='item2'>
-                    <div className='tags'>{
-                        tags.map((tag, index) => (<div key={index} className='tag'>{tag}</div>))
-                    }
+                    <div className='item2'>
+                        {itemHost}
+                        <Rating />
                     </div>
-                    <Rating />
                 </div>
                 <DropdownItem />
             </div>

@@ -23,7 +23,7 @@ function Rating() {
     return (
         <div>
             {ratings.map((rating, i) => (
-                <div key={i}>
+                <div key={i} className='Rate'>
                     <Rating rating={rating} />
                 </div>
             ))}

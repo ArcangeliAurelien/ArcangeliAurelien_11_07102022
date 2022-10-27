@@ -5,8 +5,8 @@ import IMG from '../assets/IMG.png'
 function Banner() {
     return (
         <div className="Banner">
+            <img src={IMG} alt='bg-banner' />
             <p className="text-banner">Chez vous, partout et ailleurs</p>
-            <img src={IMG} className='bg-Banner' alt='bg-banner' />
         </div>
     )
 }

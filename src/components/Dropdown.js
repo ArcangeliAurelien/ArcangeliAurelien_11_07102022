@@ -30,10 +30,10 @@ function DropdownItem() {
 
     return (
         <div className='item3'>
-            <div>
-                <div className='dropdown' onClick={handleOpen}>
+            <div className='dropdown'>
+                <div className='dropdownItem' onClick={handleOpen}>
                     <div className='dropdown-value'>Description</div>
-                    <img className='dropdown-value' style={{ transform: rotate, transition: "all 0.2s linear" }} src={arrowDown} alt='arrow' />
+                    <img className='dropdown-value' style={{ transform: rotate }} src={arrowDown} alt='arrow' />
                 </div>
                 {open ? (
                     <div className='description'>
@@ -41,10 +41,10 @@ function DropdownItem() {
                     </div>
                 ) : null}
             </div>
-            <div>
-                <div className='dropdown' onClick={handleOpen2}>
+            <div className='dropdown'>
+                <div className='dropdownItem' onClick={handleOpen2}>
                     <div className='dropdown-value'>Équipements</div>
-                    <img className='dropdown-value' style={{ transform: rotate2, transition: "all 0.2s linear" }} src={arrowDown} alt='arrow' />
+                    <img className='dropdown-value' style={{ transform: rotate2 }} src={arrowDown} alt='arrow' />
                 </div>
                 {open2 ? (
                     <div className='equipement'>

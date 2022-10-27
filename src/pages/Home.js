@@ -1,6 +1,5 @@
 import React from "react";
 import '../styles/App.css';
-import '../styles/LogementItem.css'
 import '../styles/Body.css'
 import { Link } from 'react-router-dom'
 import { LogementList } from '../datas/LogementList'
@@ -16,9 +15,9 @@ function Home() {
       <ul className='logement-list'>
         {LogementList.map(({ id, cover, title }) => (
           <li key={id} className="logement-item">
-            <Link to={`/LogementPage/${id}`}>
-              <img className="logement-item-cover" src={cover} alt={`${title} cover`} />
+            <Link to={`/LogementPage/${id}`} className='lien-lgt'>
               <p>{title}</p>
+              <img className="logement-item-cover" src={cover} alt={`${title} cover`} />
             </Link>
           </li>
         ))}
