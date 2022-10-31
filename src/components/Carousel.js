@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import { useParams } from 'react-router-dom';
 import { LogementList } from '../datas/LogementList'
 import "../styles/Carousel.css"
@@ -14,10 +14,23 @@ function Carousel() {
     const length = images.length
     const number = current + 1
 
+    // Si une image alors les flèches disparaissent
+    if (length === 1) {
+        useEffect(() => {
+            const el1 = document.querySelector(".leftArrow")
+            const el2 = document.querySelector(".rightArrow")
+
+            el1.style.visibility = "hidden"
+            el2.style.visibility = "hidden"
+        }, [])
+    }
+
+    // Passer à l'image suivante
     const nextSlide = () => {
         setCurrent(current === length - 1 ? 0 : current + 1);
     }
 
+    // Passer à l'image précédente
     const prevSlide = () => {
         setCurrent(current === 0 ? length - 1 : current - 1);
     }
