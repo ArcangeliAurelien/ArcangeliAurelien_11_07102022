@@ -15,9 +15,11 @@ function DropdownItem() {
     const [rotateChevron, setRotateChevron] = React.useState(false)
     const [rotateChevron2, setRotateChevron2] = React.useState(false)
 
+    // retourne l'icône flèche
     const rotate = rotateChevron ? "rotateX(180deg)" : "rotateX(0)"
     const rotate2 = rotateChevron2 ? "rotateX(180deg)" : "rotateX(0)"
 
+    // Affiche le bloc contenant les informations
     const handleOpen = () => {
         setOpen(!open)
         setRotateChevron(!rotateChevron)

@@ -9,8 +9,11 @@ function Rating() {
     const lgt = LogementList.find((ele) => ele.id === id)
 
     const ratings = [lgt.rating]
+
+    // Afficher 5 étoiles
     const starArray = [...Array(5).keys()].map(i => i + 1);
 
+    // Colorie les étoiles en fonction du rating donné
     const Rating = ({ rating }) =>
         starArray.map(i => (
             <FaStar
