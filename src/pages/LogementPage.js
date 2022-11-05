@@ -7,10 +7,13 @@ import Rating from '../components/Rating';
 import DropdownItem from '../components/Dropdown';
 import Footer from '../components/Footer';
 import "../styles/LogementPage.css"
+import ErrorPage from './ErrorPage';
 
 function LogementPage() {
     const { id } = useParams()
     const lgt = LogementList.find((ele) => ele.id === id)
+
+    if(lgt === undefined) {return <ErrorPage />}
 
     const host = lgt.host
     const itemHost = <div className='profil'>
