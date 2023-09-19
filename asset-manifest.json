@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Arcangeli_Aurelien_11_07102022/static/css/main.28659006.css",
+    "main.js": "/Arcangeli_Aurelien_11_07102022/static/js/main.596c59be.js",
+    "static/media/IMG2.png": "/Arcangeli_Aurelien_11_07102022/static/media/IMG2.00ffed0a838c49b964ca.png",
+    "static/media/IMG.png": "/Arcangeli_Aurelien_11_07102022/static/media/IMG.efc1935eb81fc5e585f9.png",
+    "static/media/logo_Kasa.png": "/Arcangeli_Aurelien_11_07102022/static/media/logo_Kasa.16a181cf929b479a9832.png",
+    "index.html": "/Arcangeli_Aurelien_11_07102022/index.html",
+    "static/media/arrowDown.svg": "/Arcangeli_Aurelien_11_07102022/static/media/arrowDown.daa24746b5862a275f650d76c9853ea7.svg",
+    "main.28659006.css.map": "/Arcangeli_Aurelien_11_07102022/static/css/main.28659006.css.map",
+    "main.596c59be.js.map": "/Arcangeli_Aurelien_11_07102022/static/js/main.596c59be.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.28659006.css",
+    "static/js/main.596c59be.js"
+  ]
+}
