@@ -1,17 +1,17 @@
 {
-  "files": {
-    "main.css": "/Arcangeli_Aurelien_11_07102022/static/css/main.28659006.css",
-    "main.js": "/Arcangeli_Aurelien_11_07102022/static/js/main.596c59be.js",
-    "static/media/IMG2.png": "/Arcangeli_Aurelien_11_07102022/static/media/IMG2.00ffed0a838c49b964ca.png",
-    "static/media/IMG.png": "/Arcangeli_Aurelien_11_07102022/static/media/IMG.efc1935eb81fc5e585f9.png",
-    "static/media/logo_Kasa.png": "/Arcangeli_Aurelien_11_07102022/static/media/logo_Kasa.16a181cf929b479a9832.png",
-    "index.html": "/Arcangeli_Aurelien_11_07102022/index.html",
-    "static/media/arrowDown.svg": "/Arcangeli_Aurelien_11_07102022/static/media/arrowDown.daa24746b5862a275f650d76c9853ea7.svg",
-    "main.28659006.css.map": "/Arcangeli_Aurelien_11_07102022/static/css/main.28659006.css.map",
-    "main.596c59be.js.map": "/Arcangeli_Aurelien_11_07102022/static/js/main.596c59be.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.28659006.css",
-    "static/js/main.596c59be.js"
-  ]
+  "main.css": "/ArcangeliAurelien_11_07102022/static/css/main.be7c104f.chunk.css",
+  "main.js": "/ArcangeliAurelien_11_07102022/static/js/main.bacf8d12.chunk.js",
+  "main.js.map": "/ArcangeliAurelien_11_07102022/static/js/main.bacf8d12.chunk.js.map",
+  "static/js/1.81fafdf2.chunk.js": "/ArcangeliAurelien_11_07102022/static/js/1.81fafdf2.chunk.js",
+  "static/js/1.81fafdf2.chunk.js.map": "/ArcangeliAurelien_11_07102022/static/js/1.81fafdf2.chunk.js.map",
+  "runtime~main.js": "/ArcangeliAurelien_11_07102022/static/js/runtime~main.3d519e93.js",
+  "runtime~main.js.map": "/ArcangeliAurelien_11_07102022/static/js/runtime~main.3d519e93.js.map",
+  "static/media/arrowDown.svg": "/ArcangeliAurelien_11_07102022/static/media/arrowDown.ba8c4ac8.svg",
+  "static/media/logo_Kasa.png": "/ArcangeliAurelien_11_07102022/static/media/logo_Kasa.309981e8.png",
+  "static/media/IMG.png": "/ArcangeliAurelien_11_07102022/static/media/IMG.6a79bf4a.png",
+  "static/media/IMG2.png": "/ArcangeliAurelien_11_07102022/static/media/IMG2.3cb52ced.png",
+  "static/css/main.be7c104f.chunk.css.map": "/ArcangeliAurelien_11_07102022/static/css/main.be7c104f.chunk.css.map",
+  "index.html": "/ArcangeliAurelien_11_07102022/index.html",
+  "precache-manifest.c6eda0431761252981e8623d2a15ba00.js": "/ArcangeliAurelien_11_07102022/precache-manifest.c6eda0431761252981e8623d2a15ba00.js",
+  "service-worker.js": "/ArcangeliAurelien_11_07102022/service-worker.js"
 }
