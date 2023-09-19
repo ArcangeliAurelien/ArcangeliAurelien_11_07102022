@@ -7,7 +7,6 @@ import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 function Carousel() {
     const { id } = useParams()
     const lgt = LogementList.find((ele) => ele.id === id)
-
     const images = lgt.pictures
 
     const [current, setCurrent] = useState(0)
@@ -15,15 +14,15 @@ function Carousel() {
     const number = current + 1
 
     // Si une image alors les flèches disparaissent
-    if (length === 1) {
-        useEffect(() => {
+    useEffect(() => {
+        if (length === 1) {
             const el1 = document.querySelector(".leftArrow")
             const el2 = document.querySelector(".rightArrow")
 
             el1.style.visibility = "hidden"
             el2.style.visibility = "hidden"
-        }, [])
-    }
+        }
+    }, [length])
 
     // Passer à l'image suivante
     const nextSlide = () => {
