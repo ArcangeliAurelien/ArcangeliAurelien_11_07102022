@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/ArcangeliAurelien_11_07102022/precache-manifest.c6eda0431761252981e8623d2a15ba00.js"
+  "/ArcangeliAurelien_11_07102022/precache-manifest.6b4f68ca687bce2d0d586e241049c8c5.js"
 );
 
 workbox.clientsClaim();
