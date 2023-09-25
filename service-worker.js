@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "https://arcangeliaurelien.github.io/ArcangeliAurelien_11_07102022/precache-manifest.48f41381e70fb42aace16993cf9b8458.js"
+  "/ArcangeliAurelien_11_07102022/precache-manifest.6b4f68ca687bce2d0d586e241049c8c5.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("https://arcangeliaurelien.github.io/ArcangeliAurelien_11_07102022/index.html", {
+workbox.routing.registerNavigationRoute("/ArcangeliAurelien_11_07102022/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
