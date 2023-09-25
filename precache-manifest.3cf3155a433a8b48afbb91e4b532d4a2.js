@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "d37735634fd44df7c3fe",
+    "revision": "731b16fc7e387e1a12f0",
     "url": "/Arcangeli_Aurelien_11_07102022/static/css/main.be7c104f.chunk.css"
   },
   {
-    "revision": "d37735634fd44df7c3fe",
-    "url": "/Arcangeli_Aurelien_11_07102022/static/js/main.d3773563.chunk.js"
+    "revision": "731b16fc7e387e1a12f0",
+    "url": "/Arcangeli_Aurelien_11_07102022/static/js/main.731b16fc.chunk.js"
   },
   {
     "revision": "81fafdf2125209299671",
@@ -32,7 +32,7 @@ self.__precacheManifest = [
     "url": "/Arcangeli_Aurelien_11_07102022/static/media/IMG2.3cb52ced.png"
   },
   {
-    "revision": "dd4b8136a5900861445a927601af1749",
+    "revision": "b4baea3504d7116d28b94ef7ff7bb272",
     "url": "/Arcangeli_Aurelien_11_07102022/index.html"
   }
 ];
